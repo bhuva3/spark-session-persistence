@@ -1,0 +1,23 @@
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+
+sourceCompatibility = 1.8
+
+mainClassName = "com.example.SparkService"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile files('libs/spark-core-2.6.1-SNAPSHOT.jar')
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.21'
+    compile group: 'org.eclipse.jetty', name: 'jetty-nosql', version: '9.4.4.v20170414'
+
+}
