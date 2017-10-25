@@ -1,4 +1,4 @@
-# Session Persistence Using SparkJava
+# Session Persistence Using SparkJava (Jetty 9.4.x)
 
 This service is to test session persistence using SparkJava with MongoDB and JDBC
 
